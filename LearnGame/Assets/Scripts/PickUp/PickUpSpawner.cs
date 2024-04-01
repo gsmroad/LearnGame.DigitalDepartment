@@ -23,15 +23,16 @@ namespace LearnGame.PickUp
 
         private float _currentSpawnTimerSeconds;
         private int _currentCount;
+        private float _spawnIntervalSeconds;
 
         void Update()
         {
             if (_currentCount < _maxCount)
             {
                 _currentSpawnTimerSeconds += Time.deltaTime;
-                var _spawnIntervalSeconds = Random.Range(_minSpawnIntervalSeconds, _maxSpawnIntervalSeconds);
                 if (_currentSpawnTimerSeconds > _spawnIntervalSeconds)
                 {
+                    _spawnIntervalSeconds = Random.Range(_minSpawnIntervalSeconds, _maxSpawnIntervalSeconds);
                     _currentSpawnTimerSeconds = 0f;
                     _currentCount++;
 
