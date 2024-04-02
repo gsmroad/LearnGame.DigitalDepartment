@@ -147,11 +147,12 @@ GameObject:
   - component: {fileID: 8957249259687944085}
   - component: {fileID: 8514860348517774319}
   - component: {fileID: 1866319855585205403}
-  - component: {fileID: 758440311836465918}
   - component: {fileID: 1873898288978750927}
   - component: {fileID: 7500985759707033276}
   - component: {fileID: 4835056130622853169}
   - component: {fileID: 6989094762961282689}
+  - component: {fileID: 9010464456914036808}
+  - component: {fileID: 1453079654401778583}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -226,18 +227,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &758440311836465918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8543331909105089004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29a3846e00a979f44bd9d4e8efd7ac01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!143 &1873898288978750927
 CharacterController:
   m_ObjectHideFlags: 0
@@ -259,8 +248,8 @@ CharacterController:
   serializedVersion: 3
   m_Height: 2
   m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_SlopeLimit: 15
+  m_StepOffset: 0.2
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -307,3 +296,28 @@ MonoBehaviour:
   _baseWeaponPrefab: {fileID: 1626963278457888024, guid: 889edb58e739f0e4481dd2bc792eda9d, type: 3}
   _hand: {fileID: 8837966188932330730}
   _health: 15
+--- !u!114 &9010464456914036808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8543331909105089004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875a38df281d8a84683ede7f27157e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1453079654401778583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8543331909105089004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ba5320b2d9bcc4990cf13b9d524f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _viewRadius: 20
